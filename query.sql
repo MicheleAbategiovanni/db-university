@@ -13,6 +13,10 @@ SELECT  *
 FROM `students`
 WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE() ) > 30;
 
+-- OPPURE
+
+SELECT * FROM `students` WHERE `date_of_birth` < CURDATE() - INTERVAL 30 YEAR;
+
 -- 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 SELECT  *
 FROM `courses`
