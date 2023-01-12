@@ -11,3 +11,6 @@ SELECT COUNT(id), `office_address` FROM `teachers` GROUP BY `office_address`;
 3. Calcolare la media dei voti di ogni appello d'esame
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT id, COUNT(id) as totale_corsi
+FROM `degrees`
+GROUP BY `department_id`;
